@@ -36,8 +36,14 @@ they all need authorization acess.
 ## Launch a Notebook
 When you first access Jupyter Hub, you will see a configuration screen that asks
 you which notebook image to use as the base for your project, as well as for
-some other details. Ensure that **Standard Data Science** is selected for the
-notebook image. Then click _Start Server_.
+some other details. 
+
+1. Ensure that **Standard Data Science** is selected for the
+notebook image. You may not see any other images listed, and that's OK. Just make sure to select **Standard Data Science**.
+
+2. Make sure that you change the container size to **SMALL**. If you do not change it, your lab will for sure blow up between notebooks 2 and 3, or many other times. You need more memory for your lab, so be sure to choose **SMALL**. The default size does not have enough memory. Do not choose larger sizes, as you will likely either fail to ever get a lab notebook, or you will interrupt the other user's experiences.
+
+Once you have made the correct selections indicated above, click _Start Server_.
 
 ![Server Options](images/start-server.png)
 
