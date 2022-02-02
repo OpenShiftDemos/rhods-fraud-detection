@@ -1,2 +1,2 @@
 .ipynb_checkpoints
-app/__pycache__/*.pyc
+*/__pycache__/*.pyc
