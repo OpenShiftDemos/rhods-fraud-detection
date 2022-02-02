@@ -1,7 +1,7 @@
 # Fraud Detection with Red Hat OpenShift Data Science
 Red Hat OpenShift Data Science is a managed cloud service for data scientists
 and developers of intelligent applications. It provides a fully supported
-sandbox in which to rapidly develop, train, and test machine learning (ML)
+environment in which to rapidly develop, train, and test machine learning (ML)
 models in the public cloud before deploying in production.
 
 The content in this repository describes how to use OpenShift Data Science to
@@ -11,8 +11,11 @@ common workflows to use with it.
 
 ## Access OpenShift Data Science
 In order to use the content in this repository, you need to already have access
-to an OpenShift Data Science environment. Using the access credentials provided
-to you, log into the OpenShift Data Science portal by following the _ODH
+to an OpenShift Data Science environment. If that is not the case, you can sign-up for a free 30-days "sandbox" environment by going to the [sandbox URL](https://red.ht/rhods-sandbox) and signing up.
+If you are using the "sandbox" environment, some of the instructions will differ slightly, but they will be explicitely stated when that is the case. 
+
+Using the access credentials provided
+to you, log into the OpenShift Data Science portal by following the _ODS
 Dashboard_ link. 
 
 Use the `Username` and `Password` details you were provided. When you see the
@@ -28,7 +31,7 @@ engineering, experimentation, model training, and testing.
 
 ![JupyterHub Widget](images/launch-jh.png)
 
-From the OpenShift Data Science portal page, click the Jupyter Hub link. Use the
+From the OpenShift Data Science Dashboard page, click the Jupyter Hub link. Use the
 same credentials that you used to access the OpenShift Data Science portal. Each
 application has its own `Service Account` for interacting with OpenShift, so
 they all need authorization acess.
@@ -48,7 +51,7 @@ Once you have made the correct selections indicated above, click _Start Server_.
 ![Server Options](images/start-server.png)
 
 ## Clone Git Repository
-Once your notebook image is launched, at the left-hand side of the notebook console is a Git icon. 
+Once your notebook container is launched, at the left-hand side of the notebook console is a Git icon. 
 
 ![Git Icon](images/click-git-icon.png)
 
