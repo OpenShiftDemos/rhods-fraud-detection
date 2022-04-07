@@ -1,30 +1,23 @@
-# Fraud Detection with Red Hat OpenShift Data Science
-Red Hat OpenShift Data Science is a managed cloud service for data scientists
-and developers of intelligent applications. It provides a fully supported
-environment in which to rapidly develop, train, and test machine learning (ML)
-models in the public cloud before deploying in production.
+# Fraud Detection with Red Hat OpenShift 
+Red Hat OpenShift is an enterprise ready Kubernetes platform used to host
+cloud native tools and applications for data scientists. It provides an
+environment to rapidly develop, train, test and monitor machine learning (ML)
+models in production.
 
-The content in this repository describes how to use OpenShift Data Science to
-train and test a relatively simplistic fraud detection model. In exploring this
-content, you will become familiar with the OpenShift Data Science offering and
-common workflows to use with it.
+The content in this repository describes how OpenShift can support an end to end data science workflow
+using a synthetic fraud detection data and model. In exploring this
+content, you will become familiar with several open source frameworks and tools to support 
+data science workflows.
 
-## Access OpenShift Data Science
-In order to use the content in this repository, you need to already have access
-to an OpenShift Data Science environment. If that is not the case, you can sign-up for a free 30-days "sandbox" environment by going to the [sandbox URL](https://red.ht/rhods-sandbox) and signing up.
-If you are using the "sandbox" environment, some of the instructions will differ slightly, but they will be explicitely stated when that is the case. 
+## What's needed to participate.
 
-Using the access credentials provided
-to you, log into the OpenShift Data Science portal by following the _ODS
-Dashboard_ link. 
+A web browser with internet access
 
-Use the `Username` and `Password` details you were provided. When you see the
-**Authorize Access** page, click the _Allow selected permissions_ button. These
-permissions are allowing the ODH Dashboard application to interact with the
-cluster as if it were your user (for the purpose of automations). This is a
-common paradigm with OpenShift and Kubernetes.
+### An Openshift cluster
 
-## Launch Jupyter Hub
+A login will be provided.
+ 
+### Launch Jupyter Hub
 OpenShift Data Science makes extensive use of Jupter Hub, a project that enables
 users to quickly and easily launch Jupyter Notebooks to conduct data and feature
 engineering, experimentation, model training, and testing.
@@ -60,7 +53,7 @@ Click the Git icon and then click _Clone a Repository_.
 In the window that pops up, copy the Git URL for this repository and paste it into the box:
 
 ```
-https://github.com/OpenShiftDemos/rhods-fraud-detection.git
+https://github.com/redhat-na-ssa/fraud-detection-workshop.git
 ```
 
 Then, click _CLONE_.
