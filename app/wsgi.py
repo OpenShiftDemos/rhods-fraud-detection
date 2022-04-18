@@ -24,6 +24,6 @@ def create_prediction():
     return jsonify(predict(body))
 
 # Add prometheus wsgi middleware to route /metrics requests
-application.wsgi_app = DispatcherMiddleware(app.wsgi_app, {
+application.wsgi_app = DispatcherMiddleware(application.wsgi_app, {
     '/metrics': make_wsgi_app()
 })
