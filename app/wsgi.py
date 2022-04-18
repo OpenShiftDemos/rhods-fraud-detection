@@ -8,7 +8,7 @@ from prometheus_client import make_wsgi_app
 
 application = Flask(__name__)
 
-c = Counter('visit_count', 'Visit counter')
+c = Counter('requests_count', 'Requests counter')
 
 @application.route('/')
 @application.route('/status')
