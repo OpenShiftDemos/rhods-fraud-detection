@@ -41,12 +41,14 @@ When you first access Jupyter Hub, you will see a configuration screen that asks
 you which notebook image to use as the base for your project, as well as for
 some other details. 
 
-1. Ensure that **Standard Data Science** is selected for the
+1. Ensure that **TensorFlow** is selected for the
 notebook image. You may not see any other images listed, and that's OK. Just make sure to select **Standard Data Science**.
 
 2. Make sure that you change the container size to **SMALL**. If you do not change it, your lab will for sure blow up between notebooks 2 and 3, or many other times. You need more memory for your lab, so be sure to choose **SMALL**. The default size does not have enough memory. Do not choose larger sizes, as you will likely either fail to ever get a lab notebook, or you will interrupt the other user's experiences.
 
 Once you have made the correct selections indicated above, click _Start Server_.
+
+@todo image needs to be updated
 
 ![Server Options](images/start-server.png)
 
@@ -60,7 +62,7 @@ Click the Git icon and then click _Clone a Repository_.
 In the window that pops up, copy the Git URL for this repository and paste it into the box:
 
 ```
-https://github.com/OpenShiftDemos/rhods-fraud-detection.git
+https://github.com/RHEcosystemAppEng/rhods-fraud-detection
 ```
 
 Then, click _CLONE_.
@@ -71,5 +73,5 @@ In the file browser, you will now see a folder for the repository that was clone
 
 ## Open the Notebook
 At this point you should double-click on the `rhods-fraud-detection` folder in
-the file explorer, and then double-click on the `00-getting-started.ipynb`
+the file explorer, and then double-click on the `Notebook.ipynb`
 notebook file. Begin to follow the instructions in that notebook.
