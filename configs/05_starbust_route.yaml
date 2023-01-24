@@ -1,0 +1,11 @@
+---
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: starbust-web
+spec:
+  subdomain: starbust-web
+  to:
+    kind: Service
+    name: starburst
+    weight: 100

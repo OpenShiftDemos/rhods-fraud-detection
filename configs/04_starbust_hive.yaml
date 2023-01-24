@@ -1,0 +1,72 @@
+---
+kind: StarburstHive
+apiVersion: charts.starburstdata.com/v1alpha1
+metadata:
+  name: starbursthive
+spec:
+  expose:
+    clusterIp:
+      name: hive
+      ports:
+        http:
+          port: 9083
+    loadBalancer:
+      name: hive
+      ports:
+        http:
+          port: 9083
+    nodePort:
+      name: hive
+      ports:
+        http:
+          nodePort: 30083
+          port: 9083
+    type: clusterIp
+  database:
+    internal:
+      databaseName: hive
+      databasePassword: HivePass1234
+      databaseUser: hive
+      driver: org.postgresql.Driver
+      image:
+        pullPolicy: IfNotPresent
+        repository: registry.redhat.io/rhel8/postgresql-10
+        tag: '1'
+      port: 5432
+      resources:
+        limits:
+          cpu: 0.5
+          memory: 1Gi
+        requests:
+          cpu: 0.5
+          memory: 1Gi
+      volume:
+        emptyDir: {}
+    type: internal
+  heapSizePercentage: 85
+  hiveMetastoreStorageAuthorization: true
+  image:
+    pullPolicy: IfNotPresent
+    repository: registry.connect.redhat.com/starburst/hive
+    tag: 3.1.2-e.22
+  env:
+      # Todo: Change the value for a general region link
+    - name: S3_ENDPOINT
+      value: s3.us-east-1.amazonaws.com
+    - name: S3_ACCESS_KEY
+      valueFrom:
+        secretKeyRef:
+          name: aws-credentials
+          key: AWS_ACCESS_KEY
+    - name: S3_SECRET_KEY
+      valueFrom:
+        secretKeyRef:
+          name: aws-credentials
+          key: AWS_SECRET_KEY
+  resources:
+    limits:
+      cpu: 0.5
+      memory: 2Gi
+    requests:
+      cpu: 0.5
+      memory: 2Gi
