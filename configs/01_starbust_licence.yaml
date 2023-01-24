@@ -1,0 +1,10 @@
+---
+kind: Secret
+apiVersion: v1
+metadata:
+  name: starburstdata
+data:
+  starburstdata.license: >-
+    <insert your Starbust Enterprise license json string encoded with Base64>
+type: Opaque
+
