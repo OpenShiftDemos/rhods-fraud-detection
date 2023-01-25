@@ -122,7 +122,7 @@ CREATE TABLE IF NOT EXISTS s3.fraud.original
     <summary> Verify you can read the original data loaded into SEP</summary>
 
 ```sql
-SELECT * FRTOM s3.fraud.original;
+SELECT * FROM s3.fraud.original;
 ```
 
 ![SEP Web UI](./images/sep_webui_reading.png)
