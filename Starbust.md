@@ -108,7 +108,7 @@ CREATE TABLE IF NOT EXISTS s3.fraud.original
     v27      VARCHAR,
     v28      VARCHAR,
     amount   VARCHAR,
-    is_fraud VARCHAR
+    class VARCHAR
 ) WITH ( 
     external_location = 's3a://rhods-fraud-detection/data/',
     skip_header_line_count = 1,
@@ -169,7 +169,8 @@ CREATE TABLE IF NOT EXISTS s3.fraud.clean
     AND v26 != ''
     AND v27 != ''
     AND v28 != ''
-    AND amount != '');
+    AND amount != ''
+    AND class != '');
 ```
 
 ![SEP Web UI](./images/sep_webui_writing.png)
