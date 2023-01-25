@@ -29,7 +29,7 @@ Openshift Data Science cluster.
 
 Upload the
 file [creditcard_with_empty_values.csv](https://drive.google.com/file/d/1YhmV3vPbFe-JXU_biwvaizV0WGhAegH1/view)
-to a bucket called `<PASTE_HERE_YOUR_BUCKET_NAME>/data`. In this example, we will name it `rhoda-fraud-detection`.
+to a bucket called `<PASTE_HERE_YOUR_BUCKET_NAME>/data`. In this example, we will name it `rhods-fraud-detection`.
 Your AWS credentials **must** have read and write access to this bucket.
 
 #### Set credentials and configure Starbust Enterprise
