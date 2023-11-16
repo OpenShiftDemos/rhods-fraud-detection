@@ -48,7 +48,8 @@ notebook image. You may not see any other images listed, and that's OK. Just mak
 
 Once you have made the correct selections indicated above, click _Start Server_.
 
-![Server Options](images/start-server.png)
+![Server Options](https://github.com/OpenShiftDemos/rhods-fraud-detection/assets/93923166/29e9081c-1186-4b99-9f4f-0a6113be3b4f)
+
 
 ## Clone Git Repository
 Once your notebook container is launched, at the left-hand side of the notebook console is a Git icon. 
