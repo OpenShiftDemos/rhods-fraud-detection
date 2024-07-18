@@ -1,3 +1,15 @@
+# Deprecation warning
+
+The content in this repository is now very out of date, and most things will not work as-is. 
+This repo is therefore archived for now, and may be deleted eventually.  
+
+If you are interested in the Fraud Detection tutorial, you can find an up-to-date version as part of the [Red Hat OpenShift AI documentation](https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/2-latest/html/openshift_ai_tutorial_-_fraud_detection_example/index). 
+
+The github repo used for these materials is: https://github.com/rh-aiservices-bu/fraud-detection. 
+
+Make sure to update your bookmarks. 
+
+
 # Fraud Detection with Red Hat OpenShift Data Science
 Red Hat OpenShift Data Science is a managed cloud service for data scientists
 and developers of intelligent applications. It provides a fully supported
