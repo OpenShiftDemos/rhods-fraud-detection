@@ -1,4 +1,6 @@
-# Deprecation warning
+# ⚠️⚠️⚠️⚠️ Deprecation warning ⚠️⚠️⚠️⚠️⚠️
+
+⚠️⚠️⚠️⚠️
 
 The content in this repository is now very out of date, and most things will not work as-is. 
 This repo is therefore archived for now, and may be deleted eventually.  
@@ -9,6 +11,7 @@ The github repo used for these materials is: https://github.com/rh-aiservices-bu
 
 Make sure to update your bookmarks. 
 
+⚠️⚠️⚠️⚠️
 
 # Fraud Detection with Red Hat OpenShift Data Science
 Red Hat OpenShift Data Science is a managed cloud service for data scientists
